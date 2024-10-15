@@ -10,7 +10,7 @@ Aplikace bude obsahovat REST Controller, který:
    - parametr je povinný, aspoň jedna hodnota je povinná (neprázdná)
 3. Controller bude načítat data (uživatele a jejich zájmy) z jednoduché REST služby, která vrací JSON.
     - pro jednoduchost jde o statický soubor dostupný na URL "https://raw.githubusercontent.com/sustacek/java_spring_interview_assignment/refs/heads/main/server/get-users.json"
-4. JSON přetransformuje tak, že vrátí uživatele podle zájmů, kdy vybere jenom ty zájmy, které přišly v parametru `interests`
+4. JSON přetransformuje tak, že vrátí zájmy se seznamem uživatelů, kdy vybere jenom ty zájmy, které přišly v parametru `interests`
 5. Pokud daný zájem není v JSON uveden u žádného uživatele, vrátí se 200, kdy seznam uživatelů daného zájmu bude prázdný
 
 Příklad formátu odpovědi, kde byly poslány hodnoty `reading` a `programming`:
